@@ -80,6 +80,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+function reversedLooper(array)
+{
+  for(let i = array.length - 1; i >= 0; i--)
+  {
+    alert(array[i]);
+  }
+}
+
+reversedLooper(letters);
 
 
 
