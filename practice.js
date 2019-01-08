@@ -57,6 +57,14 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
+function looper(array)
+{
+  for (let i = 0; i < array.length; i++)
+  {
+    alert(array[i]);
+  }
+}
+looper(family);
 
 
 
