@@ -249,11 +249,20 @@ function addItem(array, add)
 ////////// PROBLEM 9 //////////
 
 /*
-  Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
+  Write a function called maker that creates an array, fills that array with numbers 
+  from 1 to 215, then returns the array.
 */
 
 //Code Here
-function maker
+function maker()
+{
+  var array = [];
+  for(let i = 1; i <= 215; i++)
+  {
+    array.push(i);
+  }
+  return array;
+}
 
 
 
