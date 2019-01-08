@@ -19,6 +19,12 @@ var arr = [10,20,30];
 
 //Code Here
 
+function first(array)
+{
+  return array[0];
+}
+first(arr);
+
 
 
 ////////// PROBLEM 2 //////////
@@ -33,8 +39,11 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
-
+function last(array)
+{
+  return array[array.length - 1]
+}
+last(arr);
 
 ////////// PROBLEM 3 //////////
 
