@@ -105,6 +105,13 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
+function evenFinder(array)
+{
+  return array.filter((curVal) => {return curVal % 2 === 0})
+}
+
+evenFinder(nums);
+
 
 
 
