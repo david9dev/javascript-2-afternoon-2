@@ -139,6 +139,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(array)
+{
+  evens = [];
+  odds = [];
+  evens = array.filter((curVal) => {return curVal % 2 === 0});
+  odds = array.filter((curVal) => {return curVal % 2 === 1});
+
+  fullArray = [evens, odds];
+  return fullArray;
+
+}
 
 
 
@@ -152,7 +163,9 @@ var getRandomArbitrary = function() {
 
 /* 
   var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-  Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+  Above you're given a function that will return a random number between 0 and 30. 
+  There is also a commented out array full of numbers to help you visualize what your 
+  function will be receiving.
   Write a function named finder that will take in an array as an argument.
   It will then  get a random number (by invoking getRandomArbitrary).
   Loop through the array to see if that random number is in the array. 
@@ -160,6 +173,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(array)
+{
+  var randomNumber = getRandomArbitrary()
+  if (array.includes(randomNumber) === true)
+  {
+    return true;
+  }
+  else return false;
+}
+
 
 
 
@@ -189,6 +212,37 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(array, remove)
+{
+  if (array && remove)
+  {
+    for(let i = 0; i < array.length; i++)
+   {
+     if(array[i] === remove)
+     {
+       array.splice(i, 1);
+     }
+    }
+  }
+  else return [];
+  return array;
+
+}
+
+function addItem(array, add)
+{
+  if(array && add )
+  {
+     if(array.includes(add) === false)
+     {
+        array.push(add);
+      }
+      else console.log("item is already in the list");
+  }
+  else return [];
+  return array;
+
+}
 
 
 
@@ -199,6 +253,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function maker
 
 
 
