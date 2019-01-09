@@ -279,6 +279,10 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(array)
+{
+  return array.map((curVal) => parseInt(curVal) + 10);
+}
 
 
 
@@ -304,6 +308,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function longer(array1, array2)
+{
+  if(array1.length > array2.length)
+  {
+    return array1;
+  }
+  else return array2;
+}
 
 
 
@@ -316,6 +328,19 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+
+function both(array1, array2)
+{
+  common = [];
+  for(let i = 0; i < array1.length; i++)
+  {
+    if(array2.includes(array1[i]))
+    {
+      common.push(array1[i]);
+    }
+  }
+  return common;
+}
 
 
 
