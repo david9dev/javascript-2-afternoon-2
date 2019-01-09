@@ -381,6 +381,8 @@ var colt = {
 */
 
 //Code Here
+devMountainEmployees.push(tyler,cahlan,ryan,colt);
+
 
 
 
@@ -390,6 +392,8 @@ var colt = {
 */
 
 //Code Here
+var index = devMountainEmployees.findIndex((curVal) => curVal === cahlan);
+devMountainEmployees.splice(index, 1);
 
 
 
@@ -402,6 +406,7 @@ var colt = {
 */
 
 //Code Here
+var users = [];
 
 
 
@@ -422,6 +427,28 @@ var user1 = {
 
 //Code Here
 
+users.push(
+  {
+    name: 'Somene',
+    email: 'sooeone@gmail.com',
+    password: 'soething',
+    username: 'nawe'
+  },
+  {
+    name: 'Smeone',
+    email: 'someeone@gmail.com',
+    password: 'something0',
+    username: 'nawt'
+  },
+  {
+    name: 'Someon',
+    email: 'someonee@gmail.com',
+    password: 'somethng',
+    username: 'nawm'
+  },
+  user1
+)
+
 
 
 /*
@@ -430,11 +457,14 @@ var user1 = {
   It's easy to imagine that your followers list on Twitter is an Array full of objects and those objects contain properties about the specific person you follow.
 
   Now let's say that Tyler decided to delete his account.
-  Loop through your array of objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
+  Loop through your array of objects until you find Tyler's account 
+  (use tylermcginnis33@gmail.com to find him).
   Once you find the particular index he's located in, delete him from the array.
 */
 
 //Code Here
+index = users.findIndex((curVal) => curVal.email === "tylermcginnis33@gmail.com");
+users.splice(index, 1);
 
 
 
